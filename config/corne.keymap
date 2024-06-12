@@ -49,9 +49,9 @@
         first_layer {
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F   &kp P                   &kp B        &kp J    &kp L  &kp U                 &kp DE_Y      &kp SEMI  &kp BSPC
-&kp LCTRL  &kp A  &kp R  &kp S   &kp T                   &kp G        &kp M    &kp N  &kp E                 &kp I         &kp O     &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C   &kp D                   &kp V        &kp K    &kp H  &td UNDERSCORE COMMA  &td EXCL DOT  &kp FSLH  &kp ESC
+&kp TAB    &kp Q  &kp W  &kp F   &kp P                   &kp B        &kp J    &kp L  &kp U         &kp DE_Y    &kp DE_SEMI  &kp BSPC
+&kp LCTRL  &kp A  &kp R  &kp S   &kp T                   &kp G        &kp M    &kp N  &kp E         &kp I       &kp O        &kp SQT
+&kp LSHFT  &kp DE_Z  &kp X  &kp C   &kp D                &kp V        &kp K    &kp H  &kp DE_COMMA  &kp DE_DOT  &kp DE_FSLH  &kp ESC
                          &trans  &mt LC(LS(LALT)) SPACE  &kp LSHFT    &kp RET  &to 1  &trans
             >;
         };
@@ -59,10 +59,10 @@
         second_layer {
              display-name = "Symbols";
             bindings = <
-&trans  &kp ESC    &kp ATSN    &td LC(LG(LS(N4))) LS(N3)  &kp DLLR          &kp PRCNT     &kp CARET  &kp LS(COMMA)  &kp LS(DOT)  &kp SEMI  &kp BKSP   &trans
-&trans  &kp TAB    &kp EQUAL   &kp LA(RBKT)               &kp LA(LS(RBKT))  &kp SQT       &kp BSLH   &kp LBRC       &kp RBRC     &kp PIPE  &kp ENTER  &trans
-&trans  &kp TILDE  &kp LA(N3)  &kp LA(LBKT)               &kp LA(LS(LBKT))  &kp DQT       &kp LBKT   &kp LPRN       &kp RPRN     &kp RBKT  &to 2      &trans
-                               &trans                     &to 0             &sk LSHIFT    &sk RALT   &to 3          &trans
+&trans  &kp ESC    &kp DE_AT   &kp DE_HASH  &kp DE_DLLR       &kp DE_PRCNT     &kp DE_CARET  &kp DE_AMPS  &kp DE_STAR  &kp DE_SEMI  &kp BKSP   &trans
+&trans  &kp TAB    &kp DE_EQUAL   &kp DE_ACUTE &kp DE_GRAVE  &kp DE_SQT &kp DE_BSLH   &kp DE_LBRC  &kp DE_RBRC     &kp DE_PIPE  &kp ENTER  &trans
+&trans  &kp DE_TILDE  &trans  &trans &trans  &kp DE_DQT       &kp DE_LBKT   &kp DE_LPAR       &kp DE_RPAR     &kp DE_RBKT  &to 2      &trans
+                               &trans         &to 0       &sk LSHIFT    &sk RALT   &to 3     &trans
             >;
         };
 
