@@ -3,6 +3,7 @@
  *
  * SPDX-License-Identifier: MIT
  */
+
 #include "keys_us_international.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -54,10 +55,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W       &kp F       &kp P                   &kp B        &kp J    &kp L  &kp U                 &kp Y         &kp SEMI  &kp BSPC
-&kp LCTRL  &kp A  &hm LALT R  &hm LGUI S  &kp T                   &kp G        &kp M    &kp N  &kp E                 &kp I         &kp O     &kp SQT
-&kp LSHFT  &kp Z  &kp X       &kp C       &kp D                   &kp V        &kp K    &kp H  &td UNDERSCORE COMMA  &td EXCL DOT  &kp FSLH  &kp ESC
-                              &trans      &mt LC(LS(LALT)) SPACE  &kp LSHFT    &kp RET  &to 1  &trans
+&kp TAB    &kp Q  &kp W  &kp F   &kp P                   &kp B        &kp J    &kp L  &kp U                 &kp Y         &kp SEMI  &kp BSPC
+&kp LCTRL  &kp A  &kp R  &kp S   &kp T                   &kp G        &kp M    &kp N  &kp E                 &kp I         &kp O     &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C   &kp D                   &kp V        &kp K    &kp H  &td UNDERSCORE COMMA  &td EXCL DOT  &kp FSLH  &kp ESC
+                         &trans  &mt LC(LS(LALT)) SPACE  &kp LSHFT    &kp RET  &to 1  &trans
             >;
         };
 
