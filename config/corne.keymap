@@ -69,10 +69,12 @@
         third_layer {   
             display-name = "Mouse";
             bindings = <
-&trans  &trans               &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &trans    &kp LALT(LEFT)  &kp LC(LS(TAB))  &kp RC(TAB)   &kp LALT(RIGHT)  &trans     &trans
-&trans  &kp F1               &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp DEL      &kp LEFT      &kp DOWN         &kp UP        &kp RIGHT     &kp ENTER  &trans
-&trans  &td LG(GRAVE) GRAVE  &mkp RCLK       &msc SCRL_UP    &msc SCRL_DOWN   &trans       &mkp LCLK     &kp PG_DN        &kp K_VOL_DN  &trans        &trans     &trans
-                                             &trans          &to 0            &trans       &sk RALT      &to 1            &trans
+
+&none  &none               &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &none    &kp LEFT  &kp LC(LS(TAB))  &kp RC(TAB)   &kp RIGHT  &none     &none
+&none  &kp F1               &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp DEL      &kp LEFT      &kp DOWN         &kp UP        &kp RIGHT     &kp ENTER  &none
+&none  &td LG(GRAVE) GRAVE  &mkp RCLK       &msc SCRL_UP    &msc SCRL_DOWN   &none       &mkp LCLK     &kp PG_DN        &kp K_VOL_DN  &none        &none     &to 4
+                                             &none          &to 0            &none       &sk RALT      &to 1            &none
+
             >;
         };
 
