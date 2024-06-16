@@ -44,57 +44,64 @@
     };
 
     keymap {
-        compatible = "zmk,keymap";    
+        compatible = "zmk,keymap";
 
         zero_layer {
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F   &kp P                   &kp B        &kp J    &kp L  &kp U         &kp DE_Y    &kp DE_SEMI  &kp BSPC
-&kp LCTRL  &kp A  &kp R  &kp S   &kp T                   &kp G        &kp M    &kp N  &kp E         &kp I       &kp O        &kp SQT
-&kp LSHFT  &kp DE_Z  &kp X  &kp C   &kp D                &kp V        &kp K    &kp H  &kp DE_COMMA  &kp DE_DOT  &kp DE_FSLH  &kp ESC
-                         &none  &mt LC(LS(LALT)) SPACE  &kp LSHFT    &kp RET  &to 1  &none
+&kp TAB    &kp Q     &kp W  &kp F  &kp P                   &kp B        &kp J    &kp L  &kp U         &kp DE_Y    &kp DE_SEMI  &kp BSPC
+&kp LCTRL  &kp A     &kp R  &kp S  &kp T                   &kp G        &kp M    &kp N  &kp E         &kp I       &kp O        &kp SQT
+&kp LSHFT  &kp DE_Z  &kp X  &kp C  &kp D                   &kp V        &kp K    &kp H  &kp DE_COMMA  &kp DE_DOT  &kp DE_FSLH  &kp ESC
+                            &none  &mt LC(LS(LALT)) SPACE  &kp LSHFT    &kp RET  &to 1  &none
             >;
         };
 
-         first_layer{
-             display-name = "Symbols";
+        first_layer {
+            display-name = "Symbols";
             bindings = <
-&none  &kp ESC    &kp DE_AT   &kp DE_HASH  &kp DE_DLLR       &kp DE_PRCNT     &kp DE_CARET  &kp DE_AMPS  &kp DE_STAR  &kp DE_SEMI  &kp BKSP   &none
-&none  &kp TAB    &kp DE_EQUAL   &kp DE_ACUTE &kp DE_GRAVE  &kp DE_SQT &kp DE_BSLH   &kp DE_LBRC  &kp DE_RBRC     &kp DE_PIPE  &kp ENTER  &none
-&none  &kp DE_TILDE  &none  &none &none  &kp DE_DQT       &kp DE_LBKT   &kp DE_LPAR       &kp DE_RPAR     &kp DE_RBKT  &to 2      &none
-                               &none         &to 0       &sk LSHIFT    &sk RALT   &to 3     &none
+&none  &kp ESC       &kp DE_AT     &kp DE_HASH   &kp DE_DLLR   &kp DE_PRCNT    &kp DE_CARET  &kp DE_AMPS  &kp DE_STAR  &kp DE_SEMI  &kp BKSP   &none
+&none  &kp TAB       &kp DE_EQUAL  &kp DE_ACUTE  &kp DE_GRAVE  &kp DE_SQT      &kp DE_BSLH   &kp DE_LBRC  &kp DE_RBRC  &kp DE_PIPE  &kp ENTER  &none
+&none  &kp DE_TILDE  &none         &none         &none         &kp DE_DQT      &kp DE_LBKT   &kp DE_LPAR  &kp DE_RPAR  &kp DE_RBKT  &to 2      &to 4
+                                   &none         &to 0         &sk LSHIFT      &sk RALT      &to 3        &none
             >;
         };
 
-        second_layer{   
+        second_layer {
             display-name = "Mouse";
             bindings = <
-
-&none  &none               &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &none    &kp LA(LEFT)  &kp LC(LS(TAB))  &kp RC(TAB)   &kp LA(RIGHT)  &none     &none
-&none  &kp F1               &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp DEL      &kp LEFT      &kp DOWN         &kp UP        &kp RIGHT     &kp ENTER  &none
-&none  &td LG(GRAVE) GRAVE  &mkp RCLK       &msc SCRL_UP    &msc SCRL_DOWN   &none       &mkp LCLK     &kp PG_DN        &kp K_VOL_DN  &none        &none     &to 4
-                                             &none          &to 0            &none       &sk RALT      &to 1            &none
-
+&none  &none                &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &none      &kp LA(LEFT)  &kp LC(LS(TAB))  &kp RC(TAB)   &kp LA(RIGHT)  &none      &none
+&none  &kp F1               &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp DEL    &kp LEFT      &kp DOWN         &kp UP        &kp RIGHT      &kp ENTER  &none
+&none  &td LG(GRAVE) GRAVE  &mkp RCLK       &msc SCRL_UP    &msc SCRL_DOWN   &none      &mkp LCLK     &kp PG_DN        &kp K_VOL_DN  &none          &none      &to 4
+                                            &none           &to 0            &none      &sk RALT      &to 1            &none
             >;
         };
 
-        third_layer{
+        third_layer {
             display-name = "Numbers";
             bindings = <
-&none  &kp ESC  &kp C_PP  &kp C_PREV    &kp C_NEXT    &kp DE_UNDERSCORE    &kp DE_MINUS  &kp N7  &kp N8  &kp N9  &none     &kp BSPC
-&none  &kp TAB  &none    &kp C_VOL_DN  &kp C_VOL_UP  &kp DE_PLUS    &kp DE_EQUAL  &kp N4  &kp N5  &kp N6  &kp ENTER  &none
-&none  &none   &kp DE_STAR  &kp C_BRI_DN     &kp C_BRI_UP      &kp DOT          &kp N0     &kp N1  &kp N2  &kp N3  &to 2      &none
-                           &none        &to 0         &sk LGUI         &sk RALT   &to 1   &none
+&none  &kp ESC  &kp C_PP     &kp C_PREV    &kp C_NEXT    &kp DE_UNDERSCORE    &kp DE_MINUS  &kp N7  &kp N8  &kp N9  &none      &kp BSPC
+&none  &kp TAB  &none        &kp C_VOL_DN  &kp C_VOL_UP  &kp DE_PLUS          &kp DE_EQUAL  &kp N4  &kp N5  &kp N6  &kp ENTER  &none
+&none  &none    &kp DE_STAR  &kp C_BRI_DN  &kp C_BRI_UP  &kp DOT              &kp N0        &kp N1  &kp N2  &kp N3  &to 2      &none
+                             &none         &to 0         &sk LGUI             &sk RALT      &to 1   &none
             >;
         };
 
         fourth_layer {
             display-name = "Bluetooth";
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none  &none      &none      &none      &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none       &none       &none       &none
 &none  &none  &none  &none  &none  &none    &none  &none  &bt BT_PRV  &bt BT_NXT  &bt BT_CLR  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none      &none &none &none
-&none &to 0 &none &none &to 1 &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none       &none       &none       &none
+                     &none  &to 0  &none    &none  &to 1  &none
+            >;
+        };
+
+        fifth_layer {
+            bindings = <
+&trans  &trans     &kp Q  &kp W   &kp E  &kp R     &kp T   &kp Y   &kp U   &kp I   &kp O   &kp P
+&trans  &kp LSHFT  &kp A  &kp S   &kp D  &kp F     &kp G   &kp H   &kp J   &kp K   &kp L   &trans
+&trans  &kp LCTRL  &kp Z  &kp X   &kp C  &kp V     &kp B   &kp N   &kp M   &trans  &trans  &trans
+                          &trans  &to 0  &trans    &trans  &trans  &trans
             >;
         };
     };
