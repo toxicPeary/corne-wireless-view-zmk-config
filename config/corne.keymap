@@ -41,6 +41,13 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        swap: swapper {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPPER";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            timeout-ms = <500>;
+        };
     };
 
     keymap {
@@ -69,7 +76,7 @@
         second_layer {
             display-name = "Mouse";
             bindings = <
-&none  &kp LA(TAB)             &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &none      &kp LA(LEFT)  &kp LC(LS(TAB))  &kp RC(TAB)   &kp LA(RIGHT) &none &kp BKSP     
+&none  &swap             &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &none      &kp LA(LEFT)  &kp LC(LS(TAB))  &kp RC(TAB)   &kp LA(RIGHT) &none &kp BKSP     
 &none  &kp F1               &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp DEL    &kp LEFT      &kp DOWN         &kp UP        &kp RIGHT     &none &kp ENTER  
 &none  &td LG(GRAVE) GRAVE  &mkp RCLK       &msc SCRL_UP    &msc SCRL_DOWN   &none      &mkp LCLK     &kp PG_DN        &kp K_VOL_DN  &none          &to 2      &none
                                             &none           &to 0            &none      &kp RET      &to 1            &none
