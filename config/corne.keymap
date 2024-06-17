@@ -58,7 +58,7 @@
             bindings = <
 &kp TAB    &kp Q     &kp W  &kp F  &kp P                   &kp B        &kp J    &kp L  &kp U         &kp DE_Y    &td DE_PIPE DE_SEMI  &kp BSPC
 &kp LCTRL  &kp A     &kp R  &kp S  &kp T                   &kp G        &kp M    &kp N  &kp E         &kp I       &kp O        &kp DE_SQT
-&sk LSHFT  &kp DE_Z  &kp X  &kp C  &kp D                   &kp V        &kp K    &kp H  &td DE_QMARK DE_COMMA   &td DE_EXCL DE_DOT  &dt DE_AMPS DE_FSLH  &kp ESC
+&sk LSHFT  &kp DE_Z  &kp X  &kp C  &kp D                   &kp V        &kp K    &kp H  &td DE_QMARK DE_COMMA   &td DE_EXCL DE_DOT  &td DE_AMPS DE_FSLH  &kp ESC
              &none  &kp SPACE  &sk LSHFT                   &kp RET  &to 1  &none
             >;
         };
