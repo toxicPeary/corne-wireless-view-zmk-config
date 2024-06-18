@@ -58,8 +58,8 @@
         zero_layer {
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q     &kp W  &kp F  &kp P      &kp B        &kp J    &kp L  &kp U                  &kp DE_Y            &td DE_PIPE DE_SEMI  &td DELETE BACKSPACE
-&kp LCTRL  &kp A     &kp R  &kp S  &kp T      &kp G        &kp M    &kp N  &kp E                  &kp I               &kp O                &td DE_DOUBLE_QUOTES DE_SQT
+&kp TAB    &kp Q     &kp W  &kp F  &kp P      &kp B        &kp J    &kp L  &td DE_U_UMLAUT U                  &kp DE_Y            &td DE_PIPE DE_SEMI  &td DELETE BACKSPACE
+&kp LCTRL  &td DE_A_UMLAUT A     &kp R  &kp S  &kp T      &kp G        &kp M    &kp N  &kp E                  &kp I               &td DE_O_UMLAUT O                &td DE_DOUBLE_QUOTES DE_SQT
 &sk LSHFT  &kp DE_Z  &kp X  &kp C  &kp D      &kp V        &kp K    &kp H  &td DE_QMARK DE_COMMA  &td DE_EXCL DE_DOT  &td DE_AMPS DE_FSLH  &kp ESC
                             &none  &kp SPACE  &sk LSHFT    &kp RET  &to 1  &none
             >;
@@ -111,7 +111,7 @@
 &td DE_N6 DE_N3  &kp ESC    &kp Q     &kp W  &kp E  &kp R        &kp T    &kp DE_Z  &kp U  &kp I  &kp O  &kp P
 &td N5 N2        &kp LSHFT  &kp A     &kp S  &kp D  &kp F        &kp G    &kp H     &kp J  &kp K  &kp L  &kp TAB
 &td DE_N4 DE_N1  &kp LCTRL  &kp DE_Y  &kp X  &kp C  &kp V        &kp B    &kp N     &kp M  &none  &none  &to 0
-                                      &none  &kp C  &kp SPACE    &kp RET  &swap     &none
+                                      &none  &kp C  &td LALT SPACE    &kp RET  &swap     &none
             >;
         };
     };
