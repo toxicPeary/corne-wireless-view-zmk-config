@@ -72,6 +72,12 @@
             key-positions = <0 24>;
             layers = <5>;
         };
+
+        Gthing {
+            bindings = <&kp DE_CARET>;
+            key-positions = <0 24 12>;
+            layers = <5>;
+        };
     };
 
     keymap {
