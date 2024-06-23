@@ -87,7 +87,7 @@
             display-name = "Base";
             bindings = <
 &kp TAB    &kp Q              &kp W  &kp F  &kp P      &kp B        &kp J    &kp L  &td DE_U_UMLAUT U      &kp DE_Y            &td DE_PIPE DE_SEMI  &td DELETE BACKSPACE
-&kp LCTRL  &td DE_A_UMLAUT A  &kp R  &kp S  &kp T      &kp G        &kp M    &kp N  &kp E                  &kp I               &td DE_O_UMLAUT O    &td DE_DOUBLE_QUOTES DE_SQT
+&kp LCTRL  &td DE_A_UMLAUT A  &kp R  &td DE_SZ S  &kp T      &kp G        &kp M    &kp N  &kp E                  &kp I               &td DE_O_UMLAUT O    &td DE_DOUBLE_QUOTES DE_SQT
 &sk LSHFT  &kp DE_Z           &kp X  &kp C  &kp D      &kp V        &kp K    &kp H  &td DE_QMARK DE_COMMA  &td DE_EXCL DE_DOT  &td DE_AMPS DE_FSLH  &kp ESC
                                      &none  &kp SPACE  &sk LSHFT    &kp RET  &to 1  &none
             >;
