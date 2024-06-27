@@ -106,10 +106,10 @@
         second_layer {
             display-name = "Mouse";
             bindings = <
-&none  &swap                &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &none      &kp LA(LEFT)  &kp LC(LS(TAB))  &kp RC(TAB)   &kp LA(RIGHT)  &none  &td DEL BACKSPACE
-&none  &kp F1               &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp DEL    &kp LEFT      &kp DOWN         &kp UP        &kp RIGHT      &none  &kp ENTER
-&none  &td LG(GRAVE) GRAVE  &mkp RCLK       &msc SCRL_UP    &msc SCRL_DOWN   &none      &mkp LCLK     &kp PG_DN        &kp K_VOL_DN  &none          &none  &none
-                                            &none           &to 0            &none      &kp RET       &to 1            &none
+&none  &swap                &msc SCRL_LEFT  &mmv MOVE_UP          &msc SCRL_RIGHT  &none      &kp LA(LEFT)  &kp LC(LS(TAB))  &kp RC(TAB)   &kp LA(RIGHT)  &none  &td DEL BACKSPACE
+&none  &kp F1               &mmv MOVE_LEFT  &mmv MOVE_DOWN        &mmv MOVE_RIGHT  &kp DEL    &kp LEFT      &kp DOWN         &kp UP        &kp RIGHT      &none  &kp ENTER
+&none  &td LG(GRAVE) GRAVE  &mkp RCLK       &msc SCRL_UP          &msc SCRL_DOWN   &none      &mkp LCLK     &kp PG_DN        &kp K_VOL_DN  &none          &none  &none
+                                            &kp LS(LEFT_CONTROL)  &to 0            &none      &kp RET       &to 1            &none
             >;
         };
 
