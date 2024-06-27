@@ -108,7 +108,7 @@
             bindings = <
 &none  &swap                &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &none                   &none    &kp LA(LEFT)  &kp LC(LS(TAB))  &kp RC(TAB)       &kp LA(RIGHT)   &td DEL BACKSPACE
 &none  &kp F1               &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp DEL                 &none    &kp LEFT      &kp DOWN         &kp UP            &kp RIGHT       &kp ENTER
-&none  &td LG(GRAVE) GRAVE  &kp PG_DN       &kp LC(DE_C)    &kp LC(DE_V)     &none                   &none    &mkp LCLK     &mkp RCLK        &msc SCROLL_DOWN  &msc SCROLL_UP  &none
+&none  &td LG(GRAVE) GRAVE  &kp PG_DN       &kp LC(DE_C)    &kp LC(DE_V)     &none                   &none    &mkp LCLK     &mkp RCLK        &msc SCRL_DOWN  &msc SCRL_UP  &none
                                             &none           &to 0            &kp LS(LEFT_CONTROL)    &kp RET  &to 1         &none
             >;
         };
