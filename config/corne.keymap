@@ -89,7 +89,7 @@
 &kp TAB    &kp Q              &kp W  &kp F             &kp P      &kp B        &kp J    &kp L  &td DE_U_UMLAUT U     &kp DE_Y             &td DE_PIPE DE_FSLH   &td DELETE BACKSPACE
 &kp LCTRL  &td DE_A_UMLAUT A  &kp R  &td DE_SZ S       &kp T      &kp G        &kp M    &kp N  &kp E                 &kp I                &td DE_O_UMLAUT O     &td DE_DOUBLE_QUOTES DE_SQT
 &sk LSHFT  &kp DE_Z           &kp X  &kp C             &kp D      &kp V        &kp K    &kp H  &td DE_SEMI DE_COMMA  &td DE_COLON DE_DOT  &td DE_AMPS DE_MINUS  &kp ESC
-                                     &sk LEFT_CONTROL  &kp SPACE  &sk LSHFT    &kp RET  &to 1  &td DE_EXCL QMARK
+                                     &sk LEFT_CONTROL  &kp SPACE  &sk LSHFT    &kp RET  &to 1  &td DE_EXCL DE_QMARK
             >;
         };
 
