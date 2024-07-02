@@ -81,13 +81,13 @@
 
         toCanary {
             bindings = <&to 6>;
-            key-positions = <2 3 4 7 8 9 1 10>;
+            key-positions = <19 20 21>;
             layers = <0>;
         };
 
         toBase {
             bindings = <&to 0>;
-            key-positions = <2 3 4 7 8 9 1 10>;
+            key-positions = <19 20 21>;
             layers = <6>;
         };
     };
