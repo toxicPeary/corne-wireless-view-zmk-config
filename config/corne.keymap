@@ -10,6 +10,10 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 
+chosen {
+      zmk,matrix_transform = &five_column_transform;
+    };
+
 &mt {
     flavor = "tap-preferred";
     tapping_term_ms = <200>;
